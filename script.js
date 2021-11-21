@@ -28,7 +28,7 @@ function fetchData(){
         console.log(html)
         document
         .querySelector("#app")
-        .insertAdjacentHTML("afterbegin",html);
+        .innerHTML=html;
     })
     .catch(error =>{
         console.log(error);
